@@ -260,14 +260,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htX-px-zQK">
+                                <rect key="frame" x="192" y="543" width="161" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="asy-Bi-s1v"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="b6F-Za-Dnd"/>
+                                    <constraint firstAttribute="width" constant="161" id="pxX-MD-t1v"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="161" id="vAl-eM-B7x"/>
+                                </constraints>
+                                <state key="normal" title="Clear" image="clear"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="b6F-Za-Dnd"/>
+                                        <exclude reference="vAl-eM-B7x"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vEj-Da-so9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8oz-1L-s38" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3I2-ab-aN4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="phh-Rc-A5Z" secondAttribute="trailing" constant="-26" id="Aqe-EA-82w"/>
                             <constraint firstAttribute="bottom" secondItem="phh-Rc-A5Z" secondAttribute="bottom" id="CbW-hT-JhL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="htX-px-zQK" secondAttribute="bottom" constant="8" id="ECN-58-Jx8"/>
+                            <constraint firstItem="htX-px-zQK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EFj-OW-aAu"/>
                             <constraint firstItem="lj7-A9-ZL8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LgN-B9-uBt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="htX-px-zQK" secondAttribute="bottom" constant="49" id="VOS-QE-IEZ"/>
                             <constraint firstItem="8oz-1L-s38" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e7s-hS-BJs"/>
+                            <constraint firstItem="htX-px-zQK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="116.5" id="fPf-9l-0Xg"/>
                             <constraint firstItem="lj7-A9-ZL8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gdg-aU-afp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8oz-1L-s38" secondAttribute="bottom" id="omZ-N8-dib"/>
                             <constraint firstItem="VEK-2F-efv" firstAttribute="top" secondItem="lj7-A9-ZL8" secondAttribute="top" constant="18" id="pbe-y9-6Lu"/>
@@ -277,6 +300,11 @@
                             <constraint firstItem="phh-Rc-A5Z" firstAttribute="leading" secondItem="8oz-1L-s38" secondAttribute="leading" id="vKL-Ly-w6G"/>
                             <constraint firstAttribute="trailing" secondItem="8oz-1L-s38" secondAttribute="trailing" id="y1E-pp-jdf"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ECN-58-Jx8"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="outputLbl" destination="VEK-2F-efv" id="mm7-Im-M82"/>
@@ -300,6 +328,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
